@@ -28,7 +28,7 @@
       <div class="sidebar-subheader">SEARCH</div>
       <button class="sidebar-btn">&#10010; Create New Company</button>
       <div class="sidebar-row">
-        <!-- <button class="sidebar-btn outline">&#10010; Add new site</button> -->
+        <!-- <button class="sidebar-btn outline">&#10010; Quoting</button> -->
         <button class="sidebar-btn outline">&#128269; Lookup</button>
       </div>
       <!-- <select class="sidebar-select">
@@ -50,6 +50,7 @@
         <div class="header-title-area">
           <button class="menu-toggle" id="menuToggle">&#9776;</button>
           <button class="back-btn" id="backBtn" style="display: none; margin-right: 8px;">&larr;</button>
+          <button class="hbtn orange" id="quotingBtn" style="margin-right: 12px; padding: 8px 12px;">Quoting</button>
           <h2 id="pageTitle">ID: &nbsp;|&nbsp;&nbsp;|&nbsp;&nbsp;|</h2>
         </div>
         <div class="header-actions" id="companyHeaderActions">
@@ -66,272 +67,272 @@
       <div class="content">
         <div class="view-container" id="companyView">
           <div class="grid-3">
-          <!-- Company Details & Owner Details Stack -->
-          <div class="card-column">
-            <!-- Company Details -->
-            <div class="card">
-              <div class="card-title">Company Details</div>
-              <div class="card-body">
-                <div class="field">
-                  <div class="field-label">Parent Company Name</div>
-                  <input class="field-input" type="text" />
-                </div>
-                <div class="field">
-                  <div class="field-label">Company Name &#128269;</div>
-                  <input class="field-input" type="text" />
-                </div>
-                <div class="field-row">
+            <!-- Company Details & Owner Details Stack -->
+            <div class="card-column">
+              <!-- Company Details -->
+              <div class="card">
+                <div class="card-title">Company Details</div>
+                <div class="card-body">
                   <div class="field">
-                    <div class="field-label">Company Type</div>
-                    <select class="field-select" id="companyType">
-                      <option value=""></option>
-                      <option>LTD</option>
-                      <option>PLC</option>
-                      <option>LLP</option>
-                      <option>Sole Trader</option>
-                    </select>
-                  </div>
-                  <div class="field">
-                    <div class="field-label">Company Number &#128269;</div>
-                    <input class="field-input" type="text" />
-                  </div>
-                </div>
-                <div class="field-row">
-                  <div class="field">
-                    <div class="field-label">Company Incorporated Date</div>
+                    <div class="field-label">Parent Company Name</div>
                     <input class="field-input" type="text" />
                   </div>
                   <div class="field">
-                    <div class="field-label">Customer Status</div>
-                    <select class="field-select">
-                      <option value=""></option>
-                    </select>
-                  </div>
-                </div>
-                <div class="field-row">
-                  <div class="field">
-                    <div class="field-label">Customer Value</div>
+                    <div class="field-label">Company Name &#128269;</div>
                     <input class="field-input" type="text" />
                   </div>
-                  <div class="field">
-                    <div class="field-label">Director DOB</div>
-                    <input class="field-input" type="date" />
+                  <div class="field-row">
+                    <div class="field">
+                      <div class="field-label">Company Type</div>
+                      <select class="field-select" id="companyType">
+                        <option value=""></option>
+                        <option>LTD</option>
+                        <option>PLC</option>
+                        <option>LLP</option>
+                        <option>Sole Trader</option>
+                      </select>
+                    </div>
+                    <div class="field">
+                      <div class="field-label">Company Number &#128269;</div>
+                      <input class="field-input" type="text" />
+                    </div>
                   </div>
-                </div>
-                <div class="field-row">
+                  <div class="field-row">
+                    <div class="field">
+                      <div class="field-label">Company Incorporated Date</div>
+                      <input class="field-input" type="text" />
+                    </div>
+                    <div class="field">
+                      <div class="field-label">Customer Status</div>
+                      <select class="field-select">
+                        <option value=""></option>
+                      </select>
+                    </div>
+                  </div>
+                  <div class="field-row">
+                    <div class="field">
+                      <div class="field-label">Customer Value</div>
+                      <input class="field-input" type="text" />
+                    </div>
+                    <div class="field">
+                      <div class="field-label">Director DOB</div>
+                      <input class="field-input" type="date" />
+                    </div>
+                  </div>
+                  <div class="field-row">
+                    <div class="field">
+                      <div class="field-label">Credit Score</div>
+                      <input class="field-input" type="text" />
+                    </div>
+                    <div class="field">
+                      <div class="field-label">Company Sector</div>
+                      <select class="field-select">
+                        <option value=""></option>
+                      </select>
+                    </div>
+                  </div>
                   <div class="field">
-                    <div class="field-label">Credit Score</div>
+                    <div class="field-label">SIC Code</div>
                     <input class="field-input" type="text" />
                   </div>
-                  <div class="field">
-                    <div class="field-label">Company Sector</div>
-                    <select class="field-select">
-                      <option value=""></option>
-                    </select>
+                  <div class="field-row">
+                    <div class="field">
+                      <div class="field-label">Turnover</div>
+                      <select class="field-select">
+                        <option value=""></option>
+                      </select>
+                    </div>
+                    <div class="field">
+                      <div class="field-label">Net Worth</div>
+                      <select class="field-select">
+                        <option value=""></option>
+                      </select>
+                    </div>
                   </div>
-                </div>
-                <div class="field">
-                  <div class="field-label">SIC Code</div>
-                  <input class="field-input" type="text" />
-                </div>
-                <div class="field-row">
-                  <div class="field">
-                    <div class="field-label">Turnover</div>
-                    <select class="field-select">
-                      <option value=""></option>
-                    </select>
-                  </div>
-                  <div class="field">
-                    <div class="field-label">Net Worth</div>
-                    <select class="field-select">
-                      <option value=""></option>
-                    </select>
-                  </div>
-                </div>
-                <div class="field-row">
-                  <div class="field">
-                    <div class="field-label">Building Use</div>
-                    <select class="field-select">
-                      <option value=""></option>
-                    </select>
+                  <div class="field-row">
+                    <div class="field">
+                      <div class="field-label">Building Use</div>
+                      <select class="field-select">
+                        <option value=""></option>
+                      </select>
+                    </div>
+                    <div class="field">
+                      <div class="field-label">Number of Employees</div>
+                      <input class="field-input" type="text" />
+                    </div>
                   </div>
                   <div class="field">
-                    <div class="field-label">Number of Employees</div>
+                    <div class="field-label">Website URL</div>
+                    <input class="field-input" type="text" />
+                  </div>
+                  <div class="field-row">
+                    <div class="field">
+                      <div class="field-label">VAT Declaration</div>
+                      <select class="field-select">
+                        <option value=""></option>
+                      </select>
+                    </div>
+                    <div class="field">
+                      <div class="field-label">VAT %</div>
+                      <input class="field-input" type="text" />
+                    </div>
+                  </div>
+                  <div class="field">
+                    <div class="field-label">VAT Number</div>
                     <input class="field-input" type="text" />
                   </div>
                 </div>
-                <div class="field">
-                  <div class="field-label">Website URL</div>
-                  <input class="field-input" type="text" />
-                </div>
-                <div class="field-row">
-                  <div class="field">
-                    <div class="field-label">VAT Declaration</div>
-                    <select class="field-select">
-                      <option value=""></option>
-                    </select>
+              </div>
+
+              <!-- Owner Details Card (Conditional) -->
+              <div class="card" id="ownerDetailsCard" style="display: none;">
+                <div class="card-title">Owner Details</div>
+                <div class="card-body">
+                  <div class="field-row">
+                    <div class="field">
+                      <div class="field-label">Name</div>
+                      <input class="field-input" type="text" placeholder="Anthony Lodge" />
+                    </div>
+                    <div class="field">
+                      <div class="field-label">DOB</div>
+                      <input class="field-input" type="date" />
+                    </div>
                   </div>
-                  <div class="field">
-                    <div class="field-label">VAT %</div>
-                    <input class="field-input" type="text" />
+
+                  <div class="field-row">
+                    <div class="field">
+                      <div class="field-label">View Details For</div>
+                      <select class="field-select">
+                        <option>Current Address</option>
+                        <option>Previous Address</option>
+                      </select>
+                    </div>
+                    <div class="field">
+                      <div class="field-label">Years at Current Address</div>
+                      <input class="field-input" type="text" placeholder="e.g. 10" />
+                    </div>
                   </div>
-                </div>
-                <div class="field">
-                  <div class="field-label">VAT Number</div>
-                  <input class="field-input" type="text" />
+
+                  <div class="field">
+                    <div class="field-label">Current Address Line 1</div>
+                    <input class="field-input" type="text" placeholder="e.g. Boisters House Farm, Stubbs Lane" />
+                  </div>
+
+                  <div class="field">
+                    <div class="field-label">Current Address Line 2</div>
+                    <input class="field-input" type="text" placeholder="e.g. Norton" />
+                  </div>
+
+                  <div class="field">
+                    <div class="field-label">Current Address Line 3</div>
+                    <input class="field-input" type="text" placeholder="e.g. Doncaster" />
+                  </div>
+
+                  <div class="field-row">
+                    <div class="field">
+                      <div class="field-label">Current Address Line 4</div>
+                      <input class="field-input" type="text" placeholder="" />
+                    </div>
+                    <div class="field">
+                      <div class="field-label">Current Postcode</div>
+                      <input class="field-input" type="text" placeholder="e.g. DN6 9HE" />
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>
 
-            <!-- Owner Details Card (Conditional) -->
-            <div class="card" id="ownerDetailsCard" style="display: none;">
-              <div class="card-title">Owner Details</div>
-              <div class="card-body">
-                <div class="field-row">
+            <!-- Company Address + Payment Details -->
+            <div class="card-column">
+              <div class="card">
+                <div class="card-header-flex">
+                  <div class="card-title-txt">Company Address</div>
+                  <button class="orange-btn">&#128205; Site Address</button>
+                </div>
+                <div class="card-body">
                   <div class="field">
-                    <div class="field-label">Name</div>
-                    <input class="field-input" type="text" placeholder="Anthony Lodge" />
+                    <div class="field-label">Address Line 1</div>
+                    <input class="field-input" type="text" />
                   </div>
                   <div class="field">
-                    <div class="field-label">DOB</div>
-                    <input class="field-input" type="date" />
-                  </div>
-                </div>
-
-                <div class="field-row">
-                  <div class="field">
-                    <div class="field-label">View Details For</div>
-                    <select class="field-select">
-                      <option>Current Address</option>
-                      <option>Previous Address</option>
-                    </select>
+                    <div class="field-label">Address Line 2</div>
+                    <input class="field-input" type="text" />
                   </div>
                   <div class="field">
-                    <div class="field-label">Years at Current Address</div>
-                    <input class="field-input" type="text" placeholder="e.g. 10" />
-                  </div>
-                </div>
-
-                <div class="field">
-                  <div class="field-label">Current Address Line 1</div>
-                  <input class="field-input" type="text" placeholder="e.g. Boisters House Farm, Stubbs Lane" />
-                </div>
-
-                <div class="field">
-                  <div class="field-label">Current Address Line 2</div>
-                  <input class="field-input" type="text" placeholder="e.g. Norton" />
-                </div>
-
-                <div class="field">
-                  <div class="field-label">Current Address Line 3</div>
-                  <input class="field-input" type="text" placeholder="e.g. Doncaster" />
-                </div>
-
-                <div class="field-row">
-                  <div class="field">
-                    <div class="field-label">Current Address Line 4</div>
-                    <input class="field-input" type="text" placeholder="" />
+                    <div class="field-label">Address Line 3</div>
+                    <input class="field-input" type="text" />
                   </div>
                   <div class="field">
-                    <div class="field-label">Current Postcode</div>
-                    <input class="field-input" type="text" placeholder="e.g. DN6 9HE" />
+                    <div class="field-label">Address Line 4</div>
+                    <input class="field-input" type="text" />
+                  </div>
+                  <div class="field-row">
+                    <div class="field">
+                      <div class="field-label">Postcode &#128269;</div>
+                      <input class="field-input" type="text" />
+                    </div>
+                    <div class="field">
+                      <div class="field-label">Country</div>
+                      <select class="field-select">
+                        <option value=""></option>
+                        <option>England</option>
+                        <option>Scotland</option>
+                        <option>Wales</option>
+                        <option>Northern Ireland</option>
+                      </select>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="card">
+                <div class="card-title">Payment Details</div>
+                <div class="card-body">
+                  <div class="field-row">
+                    <div class="field">
+                      <div class="field-label">Payment Type</div>
+                      <select class="field-select">
+                        <option value=""></option>
+                        <option>Monthly Direct Debit</option>
+                        <option>Quarterly Direct Debit</option>
+                        <option>BACS</option>
+                      </select>
+                    </div>
+                    <div class="field">
+                      <div class="field-label">Direct Debit Start Date</div>
+                      <input class="field-input" type="text" />
+                    </div>
+                  </div>
+                  <div class="field">
+                    <div class="field-label">Account Holder</div>
+                    <input class="field-input" type="text" />
+                  </div>
+                  <div class="field-row">
+                    <div class="field">
+                      <div class="field-label">Account Number</div>
+                      <input class="field-input" type="text" />
+                    </div>
+                    <div class="field">
+                      <div class="field-label">Sort Code</div>
+                      <input class="field-input" type="text" />
+                    </div>
+                  </div>
+                  <div class="field-row">
+                    <div class="field">
+                      <div class="field-label">Bank Name</div>
+                      <input class="field-input" type="text" />
+                    </div>
+                    <div class="field">
+                      <div class="field-label">Bank Postcode</div>
+                      <input class="field-input" type="text" />
+                    </div>
                   </div>
                 </div>
               </div>
             </div>
-          </div>
 
-          <!-- Company Address + Payment Details -->
-          <div class="card-column">
-            <div class="card">
-              <div class="card-header-flex">
-                <div class="card-title-txt">Company Address</div>
-                <button class="orange-btn">&#128205; Site Address</button>
-              </div>
-              <div class="card-body">
-                <div class="field">
-                  <div class="field-label">Address Line 1</div>
-                  <input class="field-input" type="text" />
-                </div>
-                <div class="field">
-                  <div class="field-label">Address Line 2</div>
-                  <input class="field-input" type="text" />
-                </div>
-                <div class="field">
-                  <div class="field-label">Address Line 3</div>
-                  <input class="field-input" type="text" />
-                </div>
-                <div class="field">
-                  <div class="field-label">Address Line 4</div>
-                  <input class="field-input" type="text" />
-                </div>
-                <div class="field-row">
-                  <div class="field">
-                    <div class="field-label">Postcode &#128269;</div>
-                    <input class="field-input" type="text" />
-                  </div>
-                  <div class="field">
-                    <div class="field-label">Country</div>
-                    <select class="field-select">
-                      <option value=""></option>
-                      <option>England</option>
-                      <option>Scotland</option>
-                      <option>Wales</option>
-                      <option>Northern Ireland</option>
-                    </select>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="card">
-              <div class="card-title">Payment Details</div>
-              <div class="card-body">
-                <div class="field-row">
-                  <div class="field">
-                    <div class="field-label">Payment Type</div>
-                    <select class="field-select">
-                      <option value=""></option>
-                      <option>Monthly Direct Debit</option>
-                      <option>Quarterly Direct Debit</option>
-                      <option>BACS</option>
-                    </select>
-                  </div>
-                  <div class="field">
-                    <div class="field-label">Direct Debit Start Date</div>
-                    <input class="field-input" type="text" />
-                  </div>
-                </div>
-                <div class="field">
-                  <div class="field-label">Account Holder</div>
-                  <input class="field-input" type="text" />
-                </div>
-                <div class="field-row">
-                  <div class="field">
-                    <div class="field-label">Account Number</div>
-                    <input class="field-input" type="text" />
-                  </div>
-                  <div class="field">
-                    <div class="field-label">Sort Code</div>
-                    <input class="field-input" type="text" />
-                  </div>
-                </div>
-                <div class="field-row">
-                  <div class="field">
-                    <div class="field-label">Bank Name</div>
-                    <input class="field-input" type="text" />
-                  </div>
-                  <div class="field">
-                    <div class="field-label">Bank Postcode</div>
-                    <input class="field-input" type="text" />
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <!-- Letter of Authority + Contact Details -->
-          <div class="card-column">
-            <!-- <div class="card">
+            <!-- Letter of Authority + Contact Details -->
+            <div class="card-column">
+              <!-- <div class="card">
               <div class="card-title">Letter of Authority</div>
               <div class="card-body">
                 <div class="field"><div class="field-label">Agent Email</div><input class="field-input" type="text" /></div>
@@ -343,268 +344,280 @@
                 </div>
               </div>
             </div> -->
-            <div class="card">
-              <div class="card-header-flex">
-                <div class="card-title-txt">Contact Details</div>
-                <button class="orange-btn">&#128205; Site Details</button>
-              </div>
-              <div class="card-body">
-                <div class="checkbox-row">
-                  <input type="checkbox" id="pc" />
-                  <label for="pc">Primary Contact</label>
+              <div class="card">
+                <div class="card-header-flex">
+                  <div class="card-title-txt">Contact Details</div>
+                  <button class="orange-btn">&#128205; Site Details</button>
                 </div>
-                <div class="field">
-                  <div class="field-label">Contact List</div>
-                  <select class="field-select">
-                    <option value=""></option>
-                  </select>
-                </div>
-                <div class="field-row">
+                <div class="card-body">
+                  <div class="checkbox-row">
+                    <input type="checkbox" id="pc" />
+                    <label for="pc">Primary Contact</label>
+                  </div>
                   <div class="field">
-                    <div class="field-label">Title</div>
+                    <div class="field-label">Contact List</div>
                     <select class="field-select">
                       <option value=""></option>
-                      <option>Mr</option>
-                      <option>Mrs</option>
-                      <option>Ms</option>
-                      <option>Dr</option>
                     </select>
                   </div>
+                  <div class="field-row">
+                    <div class="field">
+                      <div class="field-label">Title</div>
+                      <select class="field-select">
+                        <option value=""></option>
+                        <option>Mr</option>
+                        <option>Mrs</option>
+                        <option>Ms</option>
+                        <option>Dr</option>
+                      </select>
+                    </div>
+                    <div class="field">
+                      <div class="field-label">Contact Name</div>
+                      <input class="field-input" type="text" />
+                    </div>
+                  </div>
+                  <div class="field-row">
+                    <div class="field">
+                      <div class="field-label">Job Title</div>
+                      <input class="field-input" type="text" />
+                    </div>
+                    <div class="field">
+                      <div class="field-label">Direct Line</div>
+                      <input class="field-input" type="text" />
+                    </div>
+                  </div>
+                  <div class="field-row">
+                    <div class="field">
+                      <div class="field-label">Landline</div>
+                      <input class="field-input" type="text" />
+                    </div>
+                    <div class="field">
+                      <div class="field-label">Mobile</div>
+                      <input class="field-input" type="text" />
+                    </div>
+                  </div>
                   <div class="field">
-                    <div class="field-label">Contact Name</div>
+                    <div class="field-label">Email</div>
                     <input class="field-input" type="text" />
                   </div>
-                </div>
-                <div class="field-row">
-                  <div class="field">
-                    <div class="field-label">Job Title</div>
-                    <input class="field-input" type="text" />
-                  </div>
-                  <div class="field">
-                    <div class="field-label">Direct Line</div>
-                    <input class="field-input" type="text" />
-                  </div>
-                </div>
-                <div class="field-row">
-                  <div class="field">
-                    <div class="field-label">Landline</div>
-                    <input class="field-input" type="text" />
-                  </div>
-                  <div class="field">
-                    <div class="field-label">Mobile</div>
-                    <input class="field-input" type="text" />
-                  </div>
-                </div>
-                <div class="field">
-                  <div class="field-label">Email</div>
-                  <input class="field-input" type="text" />
                 </div>
               </div>
             </div>
           </div>
         </div>
-      </div>
-      
-      <!-- Site View -->
-      <div class="view-container" id="siteView" style="display: none;">
-        <div class="grid-4">
-          <!-- Column 1: Site Details -->
-          <div class="card-column">
-            <div class="card">
-              <div class="card-header-flex">
-                <div class="card-title-txt">Site Details</div>
-                <button class="orange-btn">Reassign Site</button>
-              </div>
-              <div class="card-body">
-                <div class="field">
-                  <div class="field-label">Company Name</div>
-                  <div id="siteCompanyDynamicName" style="font-size: 14px; font-weight: 700; color: #0f172a; margin-bottom: 14px; min-height: 20px;"></div>
-                </div>
-                <div class="field">
-                  <div class="field-label">Site Name</div>
-                  <div id="siteDynamicName" style="font-size: 14px; font-weight: 700; color: #0f172a; margin-bottom: 14px; min-height: 20px;"></div>
-                </div>
-                
-                <div style="margin: 15px 0;">
-                  <label class="toggle-container">
-                    <input type="checkbox" class="toggle-input">
-                    <span class="toggle-slider"></span>
-                    <span>Tenant</span>
-                  </label>
-                  
-                  <label class="toggle-container">
-                    <input type="checkbox" class="toggle-input">
-                    <span class="toggle-slider"></span>
-                    <span>Vacant</span>
-                  </label>
-                  
-                  <label class="toggle-container">
-                    <input type="checkbox" class="toggle-input">
-                    <span class="toggle-slider"></span>
-                    <span>Change of Tenancy (CoT)</span>
-                  </label>
-                </div>
 
-                <div class="field" style="margin-top: 15px;">
-                  <div class="field-label">Tenant/Owner Name</div>
-                  <input class="line-input" type="text" placeholder="" />
+        <!-- Site View -->
+        <div class="view-container" id="siteView" style="display: none;">
+          <div class="grid-4">
+            <!-- Column 1: Site Details -->
+            <div class="card-column">
+              <div class="card">
+                <div class="card-header-flex">
+                  <div class="card-title-txt">Site Details</div>
+                  <button class="orange-btn">Reassign Site</button>
                 </div>
-                
-                <hr style="border: 0; border-top: 1px solid #e2e8f0; margin: 15px 0;">
-                
-                <div class="field-row">
+                <div class="card-body">
                   <div class="field">
-                    <div class="field-label">Current Electricity Supplier</div>
-                    <div id="currentElectricitySupplier" style="font-size: 13px; font-weight: 700; color: #0f172a; min-height: 18px;"></div>
+                    <div class="field-label">Company Name</div>
+                    <div id="siteCompanyDynamicName"
+                      style="font-size: 14px; font-weight: 700; color: #0f172a; margin-bottom: 14px; min-height: 20px;">
+                    </div>
                   </div>
                   <div class="field">
-                    <div class="field-label">Current Gas Supplier</div>
-                    <div id="currentGasSupplier" style="font-size: 13px; font-weight: 700; color: #94a3b8; min-height: 18px;">-</div>
+                    <div class="field-label">Site Name</div>
+                    <div id="siteDynamicName"
+                      style="font-size: 14px; font-weight: 700; color: #0f172a; margin-bottom: 14px; min-height: 20px;">
+                    </div>
                   </div>
-                </div>
-                
-                <div class="checkbox-row" style="margin-top: 15px; border-style: solid; border-color: #e2e8f0; background: #fff; padding: 10px;">
-                  <input type="checkbox" id="customerConsent" />
-                  <label for="customerConsent" style="font-weight: 500; font-size: 11px; color: #475569; line-height: 1.4;">
-                    Please confirm customer consent has been received to be contacted regarding the current quote
-                  </label>
+
+                  <div style="margin: 15px 0;">
+                    <label class="toggle-container">
+                      <input type="checkbox" class="toggle-input">
+                      <span class="toggle-slider"></span>
+                      <span>Tenant</span>
+                    </label>
+
+                    <label class="toggle-container">
+                      <input type="checkbox" class="toggle-input">
+                      <span class="toggle-slider"></span>
+                      <span>Vacant</span>
+                    </label>
+
+                    <label class="toggle-container">
+                      <input type="checkbox" class="toggle-input">
+                      <span class="toggle-slider"></span>
+                      <span>Change of Tenancy (CoT)</span>
+                    </label>
+                  </div>
+
+                  <div class="field" style="margin-top: 15px;">
+                    <div class="field-label">Tenant/Owner Name</div>
+                    <input class="line-input" type="text" placeholder="" />
+                  </div>
+
+                  <hr style="border: 0; border-top: 1px solid #e2e8f0; margin: 15px 0;">
+
+                  <div class="field-row">
+                    <div class="field">
+                      <div class="field-label">Current Electricity Supplier</div>
+                      <div id="currentElectricitySupplier"
+                        style="font-size: 13px; font-weight: 700; color: #0f172a; min-height: 18px;"></div>
+                    </div>
+                    <div class="field">
+                      <div class="field-label">Current Gas Supplier</div>
+                      <div id="currentGasSupplier"
+                        style="font-size: 13px; font-weight: 700; color: #94a3b8; min-height: 18px;">-</div>
+                    </div>
+                  </div>
+
+                  <div class="checkbox-row"
+                    style="margin-top: 15px; border-style: solid; border-color: #e2e8f0; background: #fff; padding: 10px;">
+                    <input type="checkbox" id="customerConsent" />
+                    <label for="customerConsent"
+                      style="font-weight: 500; font-size: 11px; color: #475569; line-height: 1.4;">
+                      Please confirm customer consent has been received to be contacted regarding the current quote
+                    </label>
+                  </div>
                 </div>
               </div>
             </div>
-          </div>
-          
-          <!-- Column 2: Site Address & Billing Address -->
-          <div class="card-column">
-            <!-- Site Address Card -->
-            <div class="card">
-              <div class="card-header-flex">
-                <div class="card-title-txt">Site Address</div>
-                <button class="orange-btn">📋 Company Address</button>
-              </div>
-              <div class="card-body">
-                <div class="field">
-                  <div class="field-label">Address Line 1</div>
-                  <input class="line-input" type="text" />
+
+            <!-- Column 2: Site Address & Billing Address -->
+            <div class="card-column">
+              <!-- Site Address Card -->
+              <div class="card">
+                <div class="card-header-flex">
+                  <div class="card-title-txt">Site Address</div>
+                  <button class="orange-btn">📋 Company Address</button>
                 </div>
-                <div class="field">
-                  <div class="field-label">Address Line 2</div>
-                  <input class="line-input" type="text" />
-                </div>
-                <div class="field">
-                  <div class="field-label">Address Line 3</div>
-                  <input class="line-input" type="text" />
-                </div>
-                <div class="field">
-                  <div class="field-label">Address Line 4</div>
-                  <input class="line-input" type="text" />
-                </div>
-                <div class="field-row">
+                <div class="card-body">
                   <div class="field">
-                    <div class="field-label">Postcode <span style="color: #64748b; font-size: 10px; cursor: pointer; margin-left: 2px;">&#128269;</span></div>
+                    <div class="field-label">Address Line 1</div>
                     <input class="line-input" type="text" />
                   </div>
                   <div class="field">
-                    <div class="field-label">Country</div>
+                    <div class="field-label">Address Line 2</div>
+                    <input class="line-input" type="text" />
+                  </div>
+                  <div class="field">
+                    <div class="field-label">Address Line 3</div>
+                    <input class="line-input" type="text" />
+                  </div>
+                  <div class="field">
+                    <div class="field-label">Address Line 4</div>
+                    <input class="line-input" type="text" />
+                  </div>
+                  <div class="field-row">
+                    <div class="field">
+                      <div class="field-label">Postcode <span
+                          style="color: #64748b; font-size: 10px; cursor: pointer; margin-left: 2px;">&#128269;</span>
+                      </div>
+                      <input class="line-input" type="text" />
+                    </div>
+                    <div class="field">
+                      <div class="field-label">Country</div>
+                      <select class="line-select">
+                        <option value=""></option>
+                        <option>England</option>
+                        <option>Scotland</option>
+                        <option>Wales</option>
+                        <option>Northern Ireland</option>
+                      </select>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Billing Address Card -->
+              <div class="card">
+                <div class="card-header-relative">
+                  <div class="card-title-centered">Billing Address</div>
+                </div>
+                <div class="card-body">
+                  <div style="display: flex; gap: 12px; margin-bottom: 15px;">
+                    <label
+                      style="display: flex; align-items: center; gap: 4px; font-size: 10px; font-weight: 600; color: #64748b; cursor: pointer; user-select: none;">
+                      <input type="checkbox" style="accent-color: #ea580c;" /> Same as Site
+                    </label>
+                    <label
+                      style="display: flex; align-items: center; gap: 4px; font-size: 10px; font-weight: 600; color: #64748b; cursor: pointer; user-select: none;">
+                      <input type="checkbox" style="accent-color: #ea580c;" /> Same as Company
+                    </label>
+                  </div>
+                  <div class="field">
+                    <div class="field-label">Address Line 1</div>
+                    <input class="line-input" type="text" />
+                  </div>
+                  <div class="field">
+                    <div class="field-label">Address Line 2</div>
+                    <input class="line-input" type="text" />
+                  </div>
+                  <div class="field">
+                    <div class="field-label">Address Line 3</div>
+                    <input class="line-input" type="text" />
+                  </div>
+                  <div class="field">
+                    <div class="field-label">Address Line 4</div>
+                    <input class="line-input" type="text" />
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Column 3: Our Details & Letter of Authority -->
+            <div class="card-column">
+              <!-- Our Details Card -->
+              <div class="card">
+                <div class="card-header-relative">
+                  <div class="card-title-centered">Our Details</div>
+                </div>
+                <div class="card-body">
+                  <div class="field">
+                    <div class="field-label">Site Reference</div>
+                    <input class="line-input" type="text" />
+                  </div>
+                  <div class="field">
+                    <div class="field-label">Support Contact</div>
                     <select class="line-select">
                       <option value=""></option>
-                      <option>England</option>
-                      <option>Scotland</option>
-                      <option>Wales</option>
-                      <option>Northern Ireland</option>
                     </select>
                   </div>
-                </div>
-              </div>
-            </div>
-            
-            <!-- Billing Address Card -->
-            <div class="card">
-              <div class="card-header-relative">
-                <div class="card-title-centered">Billing Address</div>
-              </div>
-              <div class="card-body">
-                <div style="display: flex; gap: 12px; margin-bottom: 15px;">
-                  <label style="display: flex; align-items: center; gap: 4px; font-size: 10px; font-weight: 600; color: #64748b; cursor: pointer; user-select: none;">
-                    <input type="checkbox" style="accent-color: #ea580c;" /> Same as Site
-                  </label>
-                  <label style="display: flex; align-items: center; gap: 4px; font-size: 10px; font-weight: 600; color: #64748b; cursor: pointer; user-select: none;">
-                    <input type="checkbox" style="accent-color: #ea580c;" /> Same as Company
-                  </label>
-                </div>
-                <div class="field">
-                  <div class="field-label">Address Line 1</div>
-                  <input class="line-input" type="text" />
-                </div>
-                <div class="field">
-                  <div class="field-label">Address Line 2</div>
-                  <input class="line-input" type="text" />
-                </div>
-                <div class="field">
-                  <div class="field-label">Address Line 3</div>
-                  <input class="line-input" type="text" />
-                </div>
-                <div class="field">
-                  <div class="field-label">Address Line 4</div>
-                  <input class="line-input" type="text" />
-                </div>
-              </div>
-            </div>
-          </div>
-          
-          <!-- Column 3: Our Details & Letter of Authority -->
-          <div class="card-column">
-            <!-- Our Details Card -->
-            <div class="card">
-              <div class="card-header-relative">
-                <div class="card-title-centered">Our Details</div>
-              </div>
-              <div class="card-body">
-                <div class="field">
-                  <div class="field-label">Site Reference</div>
-                  <input class="line-input" type="text" />
-                </div>
-                <div class="field">
-                  <div class="field-label">Support Contact</div>
-                  <select class="line-select">
-                    <option value=""></option>
-                  </select>
-                </div>
-                <div class="field">
-                  <div class="field-label">Lead Source</div>
-                  <input class="line-input" type="text" />
-                </div>
-                <div class="field">
-                  <div class="field-label">Notes</div>
-                  <input class="line-input" type="text" />
-                </div>
-                <div class="field-row">
                   <div class="field">
-                    <div class="field-label">Lead Electricity Type</div>
+                    <div class="field-label">Lead Source</div>
                     <input class="line-input" type="text" />
                   </div>
                   <div class="field">
-                    <div class="field-label">Lead Gas Type</div>
+                    <div class="field-label">Notes</div>
                     <input class="line-input" type="text" />
                   </div>
-                </div>
-                
-                <div style="margin-top: 15px;">
-                  <label class="toggle-container">
-                    <input type="checkbox" class="toggle-input">
-                    <span class="toggle-slider"></span>
-                    <span>Bill to Site</span>
-                  </label>
-                  
-                  <label class="toggle-container">
-                    <input type="checkbox" class="toggle-input">
-                    <span class="toggle-slider"></span>
-                    <span>Welcome Letter Sent</span>
-                  </label>
+                  <div class="field-row">
+                    <div class="field">
+                      <div class="field-label">Lead Electricity Type</div>
+                      <input class="line-input" type="text" />
+                    </div>
+                    <div class="field">
+                      <div class="field-label">Lead Gas Type</div>
+                      <input class="line-input" type="text" />
+                    </div>
+                  </div>
+
+                  <div style="margin-top: 15px;">
+                    <label class="toggle-container">
+                      <input type="checkbox" class="toggle-input">
+                      <span class="toggle-slider"></span>
+                      <span>Bill to Site</span>
+                    </label>
+
+                    <label class="toggle-container">
+                      <input type="checkbox" class="toggle-input">
+                      <span class="toggle-slider"></span>
+                      <span>Welcome Letter Sent</span>
+                    </label>
+                  </div>
                 </div>
               </div>
-            </div>
-            
-            <!-- Letter of Authority Card
+
+              <!-- Letter of Authority Card
             <div class="card">
               <div class="card-header-relative">
                 <div class="card-title-centered">Letter of Authority</div>
@@ -635,105 +648,111 @@
               </div>
             </div>
             -->
-          </div>
-          
-          <!-- Column 4: Contact Details -->
-          <div class="card-column">
-            <div class="card">
-              <div class="card-header-flex">
-                <div class="card-title-txt">Contact Details</div>
-                <button class="orange-btn">📋 Company Details</button>
-              </div>
-              <div class="card-body">
-                <div style="display: flex; align-items: center; justify-content: space-between; margin-bottom: 14px;">
-                  <label style="display: flex; align-items: center; gap: 6px; font-size: 11px; font-weight: 600; color: #475569; cursor: pointer; user-select: none;">
-                    <input type="checkbox" style="accent-color: #ea580c;" checked /> Primary Contact
-                  </label>
+            </div>
+
+            <!-- Column 4: Contact Details -->
+            <div class="card-column">
+              <div class="card">
+                <div class="card-header-flex">
+                  <div class="card-title-txt">Contact Details</div>
+                  <button class="orange-btn">📋 Company Details</button>
                 </div>
-                
-                <div class="field">
-                  <div class="field-label">Contact List</div>
-                  <select class="line-select">
-                    <option value=""></option>
-                  </select>
-                </div>
-                
-                <div class="field-row">
+                <div class="card-body">
+                  <div style="display: flex; align-items: center; justify-content: space-between; margin-bottom: 14px;">
+                    <label
+                      style="display: flex; align-items: center; gap: 6px; font-size: 11px; font-weight: 600; color: #475569; cursor: pointer; user-select: none;">
+                      <input type="checkbox" style="accent-color: #ea580c;" checked /> Primary Contact
+                    </label>
+                  </div>
+
                   <div class="field">
-                    <div class="field-label">Title</div>
+                    <div class="field-label">Contact List</div>
                     <select class="line-select">
                       <option value=""></option>
                     </select>
                   </div>
+
+                  <div class="field-row">
+                    <div class="field">
+                      <div class="field-label">Title</div>
+                      <select class="line-select">
+                        <option value=""></option>
+                      </select>
+                    </div>
+                    <div class="field">
+                      <div class="field-label">Contact Name</div>
+                      <input class="line-input" type="text" />
+                      <span class="validation-msg">*Required Field</span>
+                    </div>
+                  </div>
+
+                  <div class="field-row">
+                    <div class="field">
+                      <div class="field-label">Job Title</div>
+                      <input class="line-input" type="text" />
+                      <span class="validation-msg">*Required Field</span>
+                    </div>
+                    <div class="field">
+                      <div class="field-label">Site Contact</div>
+                      <input class="line-input" type="text" />
+                    </div>
+                  </div>
+
+                  <div class="field-row">
+                    <div class="field">
+                      <div class="field-label">Direct Line</div>
+                      <input class="line-input" type="text" />
+                    </div>
+                    <div class="field">
+                      <div class="field-label">Landline</div>
+                      <input class="line-input" type="text" />
+                    </div>
+                  </div>
+
+                  <div class="field-row">
+                    <div class="field">
+                      <div class="field-label">Mobile</div>
+                      <input class="line-input" type="text" />
+                      <span class="validation-msg">*Either a Mobile or Landline must be provided</span>
+                    </div>
+                    <div class="field">
+                      <div class="field-label">Fax</div>
+                      <input class="line-input" type="text" />
+                    </div>
+                  </div>
+
                   <div class="field">
-                    <div class="field-label">Contact Name</div>
+                    <div class="field-label">Email</div>
                     <input class="line-input" type="text" />
-                    <span class="validation-msg">*Required Field</span>
+                    <span class="validation-msg">*Valid Email Required</span>
                   </div>
-                </div>
-                
-                <div class="field-row">
-                  <div class="field">
-                    <div class="field-label">Job Title</div>
-                    <input class="line-input" type="text" />
-                    <span class="validation-msg">*Required Field</span>
+
+                  <div style="margin-top: 14px; margin-bottom: 20px;">
+                    <div class="field-label" style="margin-bottom: 8px;">Marketing Preferences (Optional)</div>
+                    <div style="display: flex; flex-wrap: wrap; gap: 12px;">
+                      <label
+                        style="display: flex; align-items: center; gap: 4px; font-size: 11px; font-weight: 600; color: #475569; cursor: pointer; user-select: none;">
+                        <input type="checkbox" style="accent-color: #ea580c;" /> Email
+                      </label>
+                      <label
+                        style="display: flex; align-items: center; gap: 4px; font-size: 11px; font-weight: 600; color: #475569; cursor: pointer; user-select: none;">
+                        <input type="checkbox" style="accent-color: #ea580c;" /> Phone
+                      </label>
+                      <label
+                        style="display: flex; align-items: center; gap: 4px; font-size: 11px; font-weight: 600; color: #475569; cursor: pointer; user-select: none;">
+                        <input type="checkbox" style="accent-color: #ea580c;" /> SMS
+                      </label>
+                      <label
+                        style="display: flex; align-items: center; gap: 4px; font-size: 11px; font-weight: 600; color: #475569; cursor: pointer; user-select: none;">
+                        <input type="checkbox" style="accent-color: #ea580c;" /> Post
+                      </label>
+                    </div>
                   </div>
-                  <div class="field">
-                    <div class="field-label">Site Contact</div>
-                    <input class="line-input" type="text" />
+
+                  <div class="field-row" style="margin-top: 20px;">
+                    <button class="orange-btn" style="justify-content: center;">New Contact</button>
+                    <button class="orange-btn" style="justify-content: center;">Delete Contact</button>
                   </div>
-                </div>
-                
-                <div class="field-row">
-                  <div class="field">
-                    <div class="field-label">Direct Line</div>
-                    <input class="line-input" type="text" />
-                  </div>
-                  <div class="field">
-                    <div class="field-label">Landline</div>
-                    <input class="line-input" type="text" />
-                  </div>
-                </div>
-                
-                <div class="field-row">
-                  <div class="field">
-                    <div class="field-label">Mobile</div>
-                    <input class="line-input" type="text" />
-                    <span class="validation-msg">*Either a Mobile or Landline must be provided</span>
-                  </div>
-                  <div class="field">
-                    <div class="field-label">Fax</div>
-                    <input class="line-input" type="text" />
-                  </div>
-                </div>
-                
-                <div class="field">
-                  <div class="field-label">Email</div>
-                  <input class="line-input" type="text" />
-                  <span class="validation-msg">*Valid Email Required</span>
-                </div>
-                
-                <div style="margin-top: 14px; margin-bottom: 20px;">
-                  <div class="field-label" style="margin-bottom: 8px;">Marketing Preferences (Optional)</div>
-                  <div style="display: flex; flex-wrap: wrap; gap: 12px;">
-                    <label style="display: flex; align-items: center; gap: 4px; font-size: 11px; font-weight: 600; color: #475569; cursor: pointer; user-select: none;">
-                      <input type="checkbox" style="accent-color: #ea580c;" /> Email
-                    </label>
-                    <label style="display: flex; align-items: center; gap: 4px; font-size: 11px; font-weight: 600; color: #475569; cursor: pointer; user-select: none;">
-                      <input type="checkbox" style="accent-color: #ea580c;" /> Phone
-                    </label>
-                    <label style="display: flex; align-items: center; gap: 4px; font-size: 11px; font-weight: 600; color: #475569; cursor: pointer; user-select: none;">
-                      <input type="checkbox" style="accent-color: #ea580c;" /> SMS
-                    </label>
-                    <label style="display: flex; align-items: center; gap: 4px; font-size: 11px; font-weight: 600; color: #475569; cursor: pointer; user-select: none;">
-                      <input type="checkbox" style="accent-color: #ea580c;" /> Post
-                    </label>
-                  </div>
-                </div>
-                
-                <div class="field-row" style="margin-top: 20px;">
-                  <button class="orange-btn" style="justify-content: center;">New Contact</button>
-                  <button class="orange-btn" style="justify-content: center;">Delete Contact</button>
                 </div>
               </div>
             </div>
@@ -741,73 +760,72 @@
         </div>
       </div>
     </div>
-  </div>
-  <script>
-    const menuToggle = document.getElementById('menuToggle');
-    const sidebarClose = document.getElementById('sidebarClose');
-    const sidebarOverlay = document.getElementById('sidebarOverlay');
-    const sidebar = document.getElementById('sidebar');
+    <script>
+      const menuToggle = document.getElementById('menuToggle');
+      const sidebarClose = document.getElementById('sidebarClose');
+      const sidebarOverlay = document.getElementById('sidebarOverlay');
+      const sidebar = document.getElementById('sidebar');
 
-    function toggleSidebar() {
-      sidebar.classList.toggle('open');
-      sidebarOverlay.classList.toggle('active');
-    }
-
-    menuToggle.addEventListener('click', toggleSidebar);
-    sidebarClose.addEventListener('click', toggleSidebar);
-    sidebarOverlay.addEventListener('click', toggleSidebar);
-
-    // Conditional Owner Details logic
-    const companyType = document.getElementById('companyType');
-    const ownerDetailsCard = document.getElementById('ownerDetailsCard');
-
-    function checkCompanyType() {
-      if (companyType.value === 'Sole Trader') {
-        ownerDetailsCard.style.display = 'block';
-      } else {
-        ownerDetailsCard.style.display = 'none';
+      function toggleSidebar() {
+        sidebar.classList.toggle('open');
+        sidebarOverlay.classList.toggle('active');
       }
-    }
 
-    companyType.addEventListener('change', checkCompanyType);
-    checkCompanyType();
+      menuToggle.addEventListener('click', toggleSidebar);
+      sidebarClose.addEventListener('click', toggleSidebar);
+      sidebarOverlay.addEventListener('click', toggleSidebar);
 
-    // View toggling logic
-    const addSiteBtn = document.getElementById('addSiteBtn');
-    const backBtn = document.getElementById('backBtn');
-    const companyView = document.getElementById('companyView');
-    const siteView = document.getElementById('siteView');
-    const companyHeaderActions = document.getElementById('companyHeaderActions');
-    const siteHeaderActions = document.getElementById('siteHeaderActions');
-    const pageTitle = document.getElementById('pageTitle');
+      // Conditional Owner Details logic
+      const companyType = document.getElementById('companyType');
+      const ownerDetailsCard = document.getElementById('ownerDetailsCard');
 
-    const originalTitle = pageTitle.innerHTML;
+      function checkCompanyType() {
+        if (companyType.value === 'Sole Trader') {
+          ownerDetailsCard.style.display = 'block';
+        } else {
+          ownerDetailsCard.style.display = 'none';
+        }
+      }
 
-    function showSiteView() {
-      companyView.style.display = 'none';
-      siteView.style.display = 'block';
-      companyHeaderActions.style.display = 'none';
-      siteHeaderActions.style.display = 'flex';
-      backBtn.style.display = 'inline-flex';
-      pageTitle.innerHTML = 'Add Site to Company';
-    }
+      companyType.addEventListener('change', checkCompanyType);
+      checkCompanyType();
 
-    function showCompanyView() {
-      companyView.style.display = 'block';
-      siteView.style.display = 'none';
-      companyHeaderActions.style.display = 'flex';
-      siteHeaderActions.style.display = 'none';
-      backBtn.style.display = 'none';
-      pageTitle.innerHTML = originalTitle;
-    }
+      // View toggling logic
+      const addSiteBtn = document.getElementById('addSiteBtn');
+      const backBtn = document.getElementById('backBtn');
+      const companyView = document.getElementById('companyView');
+      const siteView = document.getElementById('siteView');
+      const companyHeaderActions = document.getElementById('companyHeaderActions');
+      const siteHeaderActions = document.getElementById('siteHeaderActions');
+      const pageTitle = document.getElementById('pageTitle');
 
-    if (addSiteBtn) {
-      addSiteBtn.addEventListener('click', showSiteView);
-    }
-    if (backBtn) {
-      backBtn.addEventListener('click', showCompanyView);
-    }
-  </script>
+      const originalTitle = pageTitle.innerHTML;
+
+      function showSiteView() {
+        companyView.style.display = 'none';
+        siteView.style.display = 'block';
+        companyHeaderActions.style.display = 'none';
+        siteHeaderActions.style.display = 'flex';
+        backBtn.style.display = 'inline-flex';
+        pageTitle.innerHTML = 'Add Site to Company';
+      }
+
+      function showCompanyView() {
+        companyView.style.display = 'block';
+        siteView.style.display = 'none';
+        companyHeaderActions.style.display = 'flex';
+        siteHeaderActions.style.display = 'none';
+        backBtn.style.display = 'none';
+        pageTitle.innerHTML = originalTitle;
+      }
+
+      if (addSiteBtn) {
+        addSiteBtn.addEventListener('click', showSiteView);
+      }
+      if (backBtn) {
+        backBtn.addEventListener('click', showCompanyView);
+      }
+    </script>
 </body>
 
 </html>
